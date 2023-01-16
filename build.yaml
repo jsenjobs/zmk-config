@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: nrfmicro_13_52833
+  - board: qh_nrf52832
     shield: corne_left
-  - board: nrfmicro_13_52833
+  - board: qh_nrf52832
     shield: corne_right
