@@ -17,6 +17,5 @@ include:
     shield: corne_left
   - board: blueclover_plt_demo_v2_nrf52832
     shield: qh_ws_right
-  - board: blueclover_plt_demo_v2_nrf52832
-    shield: corne_left
-  - board: blueclover_plt_demo_v2_nrf52832
+  - board: qh_nrf52832
+    shield: qh_ws_right
