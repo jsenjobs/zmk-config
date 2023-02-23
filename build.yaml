@@ -14,6 +14,6 @@
 ---
 include:
   - board: qh_nrf52832
-    shield: qh_ws_left
+    shield: qh_ws42_left
   - board: qh_nrf52832
-    shield: qh_ws_right
+    shield: qh_ws42_right
