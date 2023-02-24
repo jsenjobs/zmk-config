@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: jsenjobs
-      revision: qh
+      revision: main
       import: app/west.yml
   self:
     path: config
