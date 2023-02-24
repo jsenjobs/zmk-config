@@ -17,7 +17,3 @@ include:
     shield: qh_ws42_left
   - board: qh_nrf52832
     shield: qh_ws42_right
-  - board: qh_nrf52832
-    shield: corne_left
-  - board: qh_nrf52832
-    shield: corne_right
