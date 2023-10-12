@@ -17,3 +17,11 @@ include:
     shield: corne_left
   - board: nice_nano_v2
     shield: corne_right
+  - board: nice_nano_v2
+    shield: settings_reset
+  - board: qh_nrf52840
+    shield: qh_ws42_40
+  - board: qh_nrf52840
+    shield: qh_ws42_40
+  - board: qh_nrf52840
+    shield: qh_ws42_40
