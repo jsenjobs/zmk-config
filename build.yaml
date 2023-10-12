@@ -23,5 +23,7 @@ include:
     shield: qh_ws42_40_left
   - board: qh_nrf52840_r
     shield: qh_ws42_40_right
-  - board: qh_nrf52840
+  - board: qh_nrf52840_l
+    shield: settings_reset
+  - board: qh_nrf52840_r
     shield: settings_reset
