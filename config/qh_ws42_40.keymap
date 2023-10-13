@@ -10,6 +10,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    // DFU AOT
+    bootloader: behavior_reset_dfu {
+        compatible = "zmk,behavior-reset";
+        label = "BOOTLOAD";
+        type = <0xA8>;
+        #binding-cells = <0>;
+    };
     combos {
         compatible = "zmk,combos";
 
