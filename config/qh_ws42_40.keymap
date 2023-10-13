@@ -15,9 +15,9 @@
         test_layer {
             bindings = <
 &kp D  &kp E         &kp F         &kp G         &kp H         &kp I       &kp I       &kp H         &kp G         &kp F         &kp E         &kp D
-&kp C  &kp A         &kp S         &kp D         &kp F         &kp G       &kp H       &kp J         &kp K         &kp L         &kp SEMI      &kp C
+&kp C  &bootloader   &sys_reset    &reset        &kp F         &bt BT_CLR  &bt BT_CLR  &kp J         &reset        &sys_reset    &bootloader   &kp C
 &kp B  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT  &bt BT_NXT  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &kp B
-                                   &kp A         &mo 1         &kp SPACE   &kp RET     &mo 2         &kp A
+                                   &kp A         &kp N1        &kp N2      &kp N3      &kp N4        &kp A
             >;
         };
     };
