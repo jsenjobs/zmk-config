@@ -11,8 +11,7 @@
 
 / {
     // behaviors {
-        // DFU AOT
-
+    // DFU AOT
     //     bootloader: behavior_reset_dfu {
     //         compatible = "zmk,behavior-reset";
     //         label = "BOOTLOAD";
@@ -83,6 +82,16 @@
             bindings = <&kp RA(RCTRL)>;
             key-positions = <22 40>;
         };
+
+        left_conf {
+            bindings = <&tog 7>;
+            key-positions = <1 12 0>;
+        };
+
+        right_conf {
+            bindings = <&tog 8>;
+            key-positions = <10 11 23>;
+        };
     };
 
     keymap {
@@ -144,14 +153,32 @@
 
         media {
             bindings = <
-&tog 6  &tog 0  &tog 1  &tog 2  &trans  &trans  &trans  &trans        &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRI_UP  &kp C_VOLUME_UP    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRI_DN  &kp C_VOLUME_DOWN  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans        &trans
+&tog 6        &tog 0        &tog 1        &tog 2        &trans        &trans      &trans  &trans        &trans             &trans  &trans  &bt BT_CLR
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT  &trans  &kp C_BRI_UP  &kp C_VOLUME_UP    &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &kp C_BRI_DN  &kp C_VOLUME_DOWN  &trans  &trans  &trans
+                                          &trans        &trans        &trans      &trans  &trans        &trans
             >;
         };
 
-        test {
+        left_conf {
+            bindings = <
+&sys_reset  &bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        right_conf {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &sys_reset
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        test_key {
             bindings = <
 &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
 &kp Q     &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp LBKT   &kp LBRC
@@ -160,7 +187,7 @@
             >;
         };
 
-        test_layer {
+        check_func {
             bindings = <
 &kp D  &kp E         &kp F         &kp G              &kp H         &kp I       &kp I       &kp H         &kp G              &kp F         &kp E         &kp D
 &kp C  &bootloader   &sys_reset    &ext_power EP_TOG  &kp F         &bt BT_CLR  &bt BT_CLR  &kp J         &ext_power EP_TOG  &sys_reset    &bootloader   &kp C
