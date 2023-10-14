@@ -43,6 +43,46 @@
             bindings = <&bootloader>;
             key-positions = <11 10 18>;
         };
+
+        l_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 37>;
+        };
+
+        l_s_alt {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <15 37>;
+        };
+
+        l_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <14 37>;
+        };
+
+        l_ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <13 37>;
+        };
+
+        r_alt {
+            bindings = <&kp RALT>;
+            key-positions = <19 40>;
+        };
+
+        r_s_alt {
+            bindings = <&kp RS(RIGHT_ALT)>;
+            key-positions = <40 20>;
+        };
+
+        r_ctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <21 40>;
+        };
+
+        r_ctrl_alt {
+            bindings = <&kp RA(RCTRL)>;
+            key-positions = <22 40>;
+        };
     };
 
     keymap {
