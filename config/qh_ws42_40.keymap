@@ -50,28 +50,28 @@
 
         default {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R   &kp T      &kp Y    &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G      &kp H    &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B      &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RCTRL
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LGUI  &mo 4  &kp SPACE  &kp RET  &mo 3  &kp RCTRL
             >;
         };
 
         colemak {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P   &kp G      &kp J    &kp L   &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T   &kp D      &kp H    &kp N   &kp E      &kp I    &kp O     &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B      &kp K    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RCTRL
+&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp G      &kp J    &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp D      &kp H    &kp N  &kp E      &kp I    &kp O     &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LGUI  &mo 4  &kp SPACE  &kp RET  &mo 3  &kp RCTRL
             >;
         };
 
         dvorak {
             bindings = <
-&kp TAB    &kp APOS  &kp COMMA  &kp DOT   &kp P   &kp Y      &kp F    &kp G   &kp C      &kp R  &kp L  &kp BSPC
-&kp LCTRL  &kp A     &kp O      &kp E     &kp U   &kp I      &kp D    &kp H   &kp T      &kp N  &kp S  &kp FSLH
-&kp LSHFT  &kp SEMI  &kp Q      &kp J     &kp K   &kp X      &kp B    &kp M   &kp W      &kp V  &kp Z  &kp RSHFT
-                                &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RCTRL
+&kp TAB    &kp APOS  &kp COMMA  &kp DOT   &kp P  &kp Y      &kp F    &kp G  &kp C      &kp R  &kp L  &kp BSPC
+&kp LCTRL  &kp A     &kp O      &kp E     &kp U  &kp I      &kp D    &kp H  &kp T      &kp N  &kp S  &kp FSLH
+&kp LSHFT  &kp SEMI  &kp Q      &kp J     &kp K  &kp X      &kp B    &kp M  &kp W      &kp V  &kp Z  &kp RSHFT
+                                &kp LGUI  &mo 4  &kp SPACE  &kp RET  &mo 3  &kp RCTRL
             >;
         };
 
@@ -93,12 +93,21 @@
             >;
         };
 
-        media {
+        adjust {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&tog 6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        media {
+            bindings = <
+&tog 6  &tog 0  &tog 1  &tog 2  &trans  &trans  &trans  &trans        &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRI_UP  &kp C_VOLUME_UP    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRI_DN  &kp C_VOLUME_DOWN  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans        &trans
             >;
         };
 
@@ -118,6 +127,15 @@
 &kp B  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4  &bt BT_NXT  &bt BT_NXT  &bt BT_SEL 4  &bt BT_SEL 3       &bt BT_SEL 2  &bt BT_SEL 1  &kp B
                                    &kp A              &kp N1        &kp N2      &kp N3      &kp N4        &kp A
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        media_active {
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 };
