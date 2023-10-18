@@ -84,23 +84,13 @@
         };
 
         left_conf {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <1 0 38>;
         };
 
         right_conf {
-            bindings = <&tog 8>;
+            bindings = <&tog 7>;
             key-positions = <10 11 39>;
-        };
-
-        test_key {
-            bindings = <&tog 9>;
-            key-positions = <24 35>;
-        };
-
-        chech_fun {
-            bindings = <&tog 10>;
-            key-positions = <12 23>;
         };
     };
 
@@ -154,37 +144,28 @@
 
         adjust {
             bindings = <
-&tog 6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        media {
-            bindings = <
-&tog 6        &tog 0        &tog 1        &tog 2        &trans        &trans      &trans  &trans        &trans             &trans  &trans  &bt BT_CLR
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT  &trans  &kp C_BRI_UP  &kp C_VOLUME_UP    &trans  &trans  &ext_power EP_ON
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &kp C_BRI_DN  &kp C_VOLUME_DOWN  &trans  &trans  &ext_power EP_OFF
-                                          &trans        &trans        &trans      &trans  &trans        &trans
+&kp TAB  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp F12
+&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                         &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         left_conf {
             bindings = <
-&sys_reset         &bootloader  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&ext_power EP_OFF  &none        &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&ext_power EP_ON   &none        &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                                       &none  &none  &none  &none  &none  &none
+&sys_reset         &bt BT_CLR  &none  &none  &tog 8      &tog 9      &none  &none  &none  &none  &none  &none
+&bootloader        &none       &none  &none  &bt BT_PRV  &bt BT_NXT  &none  &none  &none  &none  &none  &none
+&ext_power EP_TOG  &none       &none  &none  &none       &none       &none  &none  &none  &none  &none  &none
+                                      &none  &none       &none       &none  &none  &none
             >;
         };
 
         right_conf {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &bootloader  &sys_reset
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none        &ext_power EP_OFF
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none        &ext_power EP_ON
-                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &tog 9      &tog 8      &none  &none  &bt BT_CLR  &sys_reset
+&none  &none  &none  &none  &none  &none  &bt BT_NXT  &bt BT_PRV  &none  &none  &none       &bootloader
+&none  &none  &none  &none  &none  &none  &none       &none       &none  &none  &none       &ext_power EP_TOG
+                     &none  &none  &none  &none       &none       &none
             >;
         };
 
