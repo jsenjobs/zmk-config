@@ -85,12 +85,22 @@
 
         left_conf {
             bindings = <&tog 7>;
-            key-positions = <1 12 0>;
+            key-positions = <1 0 38>;
         };
 
         right_conf {
             bindings = <&tog 8>;
-            key-positions = <10 11 23>;
+            key-positions = <10 11 39>;
+        };
+
+        test_key {
+            bindings = <&tog 9>;
+            key-positions = <24 35>;
+        };
+
+        chech_fun {
+            bindings = <&tog 10>;
+            key-positions = <12 23>;
         };
     };
 
