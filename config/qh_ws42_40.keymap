@@ -162,19 +162,19 @@
 
         left_conf {
             bindings = <
-&sys_reset         &bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&ext_power EP_OFF  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&ext_power EP_ON   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset         &bootloader  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&ext_power EP_OFF  &none        &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&ext_power EP_ON   &none        &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                                       &none  &none  &none  &none  &none  &none
             >;
         };
 
         right_conf {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &sys_reset
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &ext_power EP_OFF
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &ext_power EP_ON
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &bootloader  &sys_reset
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none        &ext_power EP_OFF
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none        &ext_power EP_ON
+                     &none  &none  &none  &none  &none  &none
             >;
         };
 
